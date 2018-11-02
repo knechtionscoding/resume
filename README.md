@@ -6,6 +6,8 @@ Current status of Build:
 
 [![Build Status](https://travis-ci.com/KnechtionsCoding/resume.svg?branch=master)](https://travis-ci.com/KnechtionsCoding/resume)
 
+[Hosted Website](www.hans-knecht.com)
+
 ## Usage
 
 ### Basic Usage
@@ -25,3 +27,4 @@ After installation, run `npm install` and then run `gulp dev` which will open up
 - `gulp vendor` copies dependencies from node_modules to the vendor directory
 
 You must have npm and Gulp installed globally on your machine in order to use these features.
+

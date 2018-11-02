@@ -10,7 +10,7 @@ cache:
   - node_modules
 before_deploy:
   script: 
-    - rm -r node_modules
+    - rm -R node_modules/
 deploy:
   on:
     branch: master

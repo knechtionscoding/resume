@@ -8,7 +8,11 @@ script:
 cache:
   directories:
   - node_modules
+before_deploy:
+  script: rm -r node_modules
 deploy:
+  on:
+    branch: master
   provider: s3
   access_key_id: $access_key_id
   secret_access_key: $secret_access_key

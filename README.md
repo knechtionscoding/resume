@@ -1,6 +1,10 @@
 # [Hans Knecht - Resume]
 
-Hans Knecht - Resume is build on [Resume](https://startbootstrap.com/template-overviews/resume/) a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
+Hans Knecht - Resume is build on [Resume](https://startbootstrap.com/template-overviews/resume/) a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+
+Current status of Build:
+
+[![Build Status](https://travis-ci.com/KnechtionsCoding/resume.svg?branch=master)](https://travis-ci.com/KnechtionsCoding/resume)
 
 ## Usage
 

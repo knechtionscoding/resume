@@ -6,8 +6,6 @@ Current status of Build:
 
 [![Build Status](https://travis-ci.com/KnechtionsCoding/resume.svg?branch=master)](https://travis-ci.com/KnechtionsCoding/resume)
 
-[Hosted Website](www.hans-knecht.com)
-
 ## Usage
 
 ### Basic Usage

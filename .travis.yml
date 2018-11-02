@@ -1,10 +1,21 @@
-sudo:          false
-language:      node_js
+sudo: false
+language: node_js
 node_js:
-  - "node"
-install:       npm install
+- node
+install: npm install
 script:
-  - gulp
+- gulp
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: s3
+  access_key_id: 
+  secret_access_key:
+  bucket: S3 Bucket
+  skip_cleanup: true
+  acl: public_read
+env:
+  global:
+  - secure: MS4Nkt+vIlztwZOXoQsDAaUR6SC+HbsY6bwZSHNc/aJk7cYN02ryvRnqYDn2FfgHYXvPXIKORQbpshk/EG8764AOV+w2qI50yiXujASwcM2zYn9/PWa80rheTBfIIYgv7ekgRJZFY7lwBzhkkeNl8/9bNHjk6AuuHpJbJCPNVawKaiOs9seD/1AkjpJkjfVru2PfODsBpbR1ZW/k+7FdfdR1Bmk4m8ZcUUsoGlxYEMNaBabk4xH1R/XdNLkAFHlWrrq6ZQxZrMGOC/QGTg9pmf2oiqNLS10+9BpJ8YYiS0JMPFBbI8dzG2ij3JxzFzRGsSbz61V9KP5CWdGCtJbFSYEYPvBKXJTFW/GolJVrGU/AyCZ2ke/N0Ed6+Wnj2kfINnv1Q+F9u3cmtQThgfEAxWBPIQLvACpks6O3ReaxGYxUlSsfPjoaA8htk9p1kb7CH/o5eravcgGL5n6QQoR+x/fDtz12LpmgvE5bVHG6DVi2cAxeVQrBwlDrU4qgxrDgNapooAtSqfDsAr9ywE4Kt4UqfL4fnaNd6zelbDYjrP7KFNHI6rbPdQZSMEVZmqr0gBHmPCoRmZYi724HE8rvkNdbgxeQOlbPyDwWUTGjt3BGiGwAaJTDCvFtKk8O0FBkgH2JxvmZTYxw7EULOXGz3UPDmY5GkXC61H62XcG8r4c=
+  - secure: a4F6gIq6nld1xSw+i0lI85Q+0ich8nn/i7Sq1LiqC7kuDqMoULHKoWOkq0hQCIUAn6WRBUoj9OJa17io/WmI95qu38J3QfBqIaeprBZlAw2I8juCxwoBZxw6w8q30sxvAEeUN0u0QlOf+htn+djOirbl2k8xRqL7r7xNlYDYePR6CgLyE2zV7SwZw5vXBKRxTOqyywEBSaDCp1gD6oZZeHlLdzYlCfMaOEaqejls5ZiZuNJL3BW+1uoi4CARI2sivvG8hXUsz7/vZ9k8JcqQOCIuhdxF0BN/F0nf7LKpWH5rqiqusbZ+STeDWAEZ5/Ah9JaBW4rrbSjGJu0b8mbVzGZYWoFQbDq1Zt9xlcgj3khmk6JAJYmP+C9nlpy5RzjtPdycYkpTT1YB06jgLvJYRW2gn9MwrtIDbxZcFl3ZvehCHmMP4KRXR+K/xP2Dg2YfEt6LD01/3TRQftrGbaEIdXdE5fSIJiufHKdQ/GkK8X8kGZi5tnDDuanpwlYek0i4c9YhdKMEwekz08exiKYESATy2f2QfXdMoXi9P/qQnRuz5oSZBTIs5PvIBwVMR15oOwvE0PVqfrWGupjlQyz/UQkDP7A285lyaq4LxNjE+n8z2bChILtLGGFzaGoG2jDm6q0RDhR3Cnm5ZR13988QhmeWtsahclTFGaLE07qghow=

@@ -9,7 +9,6 @@ cache:
   directories:
   - node_modules
 before_deploy:
-  script: 
     - rm -R node_modules/
 deploy:
   on:

@@ -25,4 +25,3 @@ After installation, run `npm install` and then run `gulp dev` which will open up
 - `gulp vendor` copies dependencies from node_modules to the vendor directory
 
 You must have npm and Gulp installed globally on your machine in order to use these features.
-

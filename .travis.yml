@@ -1,4 +1,7 @@
 sudo: false
+git:
+  depth: 3
+  quiet: true
 language: node_js
 node_js:
 - lts/*

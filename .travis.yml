@@ -22,6 +22,11 @@ deploy:
   bucket: hans-knecht-resume
   skip_cleanup: true
   acl: public_read
+after_deploy:
+  # Allow `awscli` to make requests to CloudFront.
+  - aws configure set preview.cloudfront true
+  # Invalidate every object in the targeted distribution.
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 env:
   global:
   - secure: MS4Nkt+vIlztwZOXoQsDAaUR6SC+HbsY6bwZSHNc/aJk7cYN02ryvRnqYDn2FfgHYXvPXIKORQbpshk/EG8764AOV+w2qI50yiXujASwcM2zYn9/PWa80rheTBfIIYgv7ekgRJZFY7lwBzhkkeNl8/9bNHjk6AuuHpJbJCPNVawKaiOs9seD/1AkjpJkjfVru2PfODsBpbR1ZW/k+7FdfdR1Bmk4m8ZcUUsoGlxYEMNaBabk4xH1R/XdNLkAFHlWrrq6ZQxZrMGOC/QGTg9pmf2oiqNLS10+9BpJ8YYiS0JMPFBbI8dzG2ij3JxzFzRGsSbz61V9KP5CWdGCtJbFSYEYPvBKXJTFW/GolJVrGU/AyCZ2ke/N0Ed6+Wnj2kfINnv1Q+F9u3cmtQThgfEAxWBPIQLvACpks6O3ReaxGYxUlSsfPjoaA8htk9p1kb7CH/o5eravcgGL5n6QQoR+x/fDtz12LpmgvE5bVHG6DVi2cAxeVQrBwlDrU4qgxrDgNapooAtSqfDsAr9ywE4Kt4UqfL4fnaNd6zelbDYjrP7KFNHI6rbPdQZSMEVZmqr0gBHmPCoRmZYi724HE8rvkNdbgxeQOlbPyDwWUTGjt3BGiGwAaJTDCvFtKk8O0FBkgH2JxvmZTYxw7EULOXGz3UPDmY5GkXC61H62XcG8r4c=

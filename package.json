@@ -1,12 +1,13 @@
 {
     "title": "Resume",
     "name": "hans-resume",
-    "version": "5.0.2",
+    "version": "5.0.8",
     "description": "",
     "homepage": "https://hans-knecht.com",
     "license": "MIT",
     "author": "Hans Knecht",
     "contributors": [
+        "Hans Knecht (https://hans-knecht.com)",
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {

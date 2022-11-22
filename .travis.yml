@@ -6,6 +6,7 @@ language: node_js
 node_js:
   - lts/*
 install: npm ci
+dist: focal
 script:
   - gulp
 cache:

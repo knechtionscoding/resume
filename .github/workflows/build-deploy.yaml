@@ -39,5 +39,5 @@ jobs:
           bucket-region: us-east-1
           dist-id: E2FX991HLNLYID
           invalidation: /
-          private: true
+          private: false
           # filesToInclude: "css/* files/* img/* js/* index.html favicon.ico scss/* vendor/*"

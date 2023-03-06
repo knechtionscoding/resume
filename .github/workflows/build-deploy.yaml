@@ -1,4 +1,4 @@
-name: NodeJS with Gulp
+name: Build and Deploy
 
 on:
   push:
@@ -39,6 +39,5 @@ jobs:
         bucket-region: us-east-1
         dist-id: E2FX991HLNLYID
         invalidation: /
-        delete-removed: true
         private: true
-        files-to-include: ".*/*,*/*,**"
+        filesToInclude: ".*/*,*/*,**"

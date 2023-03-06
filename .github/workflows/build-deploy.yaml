@@ -37,7 +37,7 @@ jobs:
           folder: .
           bucket: hans-knecht-resume
           bucket-region: us-east-1
-          private: true
+          private: false
           # filesToInclude: "css/* files/* img/* js/* index.html favicon.ico scss/* vendor/*"
       - name: Deploy West
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -48,4 +48,4 @@ jobs:
           bucket-region: us-west-2
           dist-id: E2FX991HLNLYID
           invalidation: /
-          private: true
+          private: false

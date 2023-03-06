@@ -37,7 +37,15 @@ jobs:
           folder: .
           bucket: hans-knecht-resume
           bucket-region: us-east-1
+          private: true
+          # filesToInclude: "css/* files/* img/* js/* index.html favicon.ico scss/* vendor/*"
+      - name: Deploy West
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: reggionick/s3-deploy@v3
+        with:
+          folder: .
+          bucket: hans-knecht-resume-west
+          bucket-region: us-west-2
           dist-id: E2FX991HLNLYID
           invalidation: /
-          private: false
-          # filesToInclude: "css/* files/* img/* js/* index.html favicon.ico scss/* vendor/*"
+          private: true

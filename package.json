@@ -19,7 +19,7 @@
         "bootstrap": "^5.2.3",
         "jquery": "^3.6.3",
         "jquery.easing": "^1.4.1",
-        "sass": "^1.62.0"
+        "sass": "^1.64.1"
     },
     "devDependencies": {
         "browser-sync": "^2.29.0",
